@@ -1,6 +1,6 @@
 package Bot::Twatterhose;
 BEGIN {
-  $Bot::Twatterhose::VERSION = '0.01';
+  $Bot::Twatterhose::VERSION = '0.02';
 }
 use 5.010;
 use autodie;
