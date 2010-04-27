@@ -27,7 +27,7 @@ my %WriteMakefileArgs = (
                        'EXE_FILES' => [
                                         'bin/twatterhose'
                                       ],
-                       'VERSION' => '0.02',
+                       'VERSION' => '0.03',
                        'PREREQ_PM' => {
                                         'Scalar::Util' => '0',
                                         'Hailo' => '0',
