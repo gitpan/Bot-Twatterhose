@@ -3,19 +3,12 @@
    "author" : [
       "\u00c3\u0086var Arnfj\u00c3\u00b6r\u00c3\u00b0 Bjarmason <avar@cpan.org>"
    ],
-   "build_requires" : {
-      "File::Find" : "0",
-      "File::Temp" : "0",
-      "Test::More" : "0"
-   },
-   "configure_requires" : {
-      "ExtUtils::MakeMaker" : "6.31"
-   },
-   "generated_by" : "Dist::Zilla version 2.101040",
-   "license" : "perl",
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 3.101400",
+   "license" : "perl_5",
    "meta-spec" : {
-      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html",
-      "version" : 1.4
+      "url" : "http://github.com/dagolden/cpan-meta/",
+      "version" : 2
    },
    "name" : "Bot-Twatterhose",
    "no_index" : {
@@ -23,30 +16,49 @@
          "t"
       ]
    },
-   "recommends" : {},
-   "requires" : {
-      "Any::Moose" : "0",
-      "Encode" : "0",
-      "Hailo" : "0",
-      "JSON" : "0",
-      "Mouse" : "0.50",
-      "MouseX::Getopt" : "0.2601",
-      "MouseX::Types" : "0.05",
-      "Net::Twitter::Lite" : "0",
-      "Scalar::Util" : "0",
-      "Sys::Prctl" : "0",
-      "autodie" : "0",
-      "namespace::clean" : "0",
-      "open" : "0",
-      "perl" : "5.010"
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Any::Moose" : "0",
+            "Encode" : "0",
+            "Hailo" : "0",
+            "JSON" : "0",
+            "Mouse" : "0.50",
+            "MouseX::Getopt" : "0.2601",
+            "MouseX::Types" : "0.05",
+            "Net::Twitter::Lite" : "0",
+            "Scalar::Util" : "0",
+            "Sys::Prctl" : "0",
+            "autodie" : "0",
+            "namespace::clean" : "0",
+            "open" : "0",
+            "perl" : "5.010"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Find" : "0",
+            "File::Temp" : "0",
+            "Test::More" : "0"
+         }
+      }
    },
    "resources" : {
       "Ratings" : "http://cpanratings.perl.org/d/Bot-Twatterhose",
-      "bugtracker" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Bot-Twatterhose",
+      "bugtracker" : {
+         "web" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Bot-Twatterhose"
+      },
       "homepage" : "http://search.cpan.org/dist/Bot-Twatterhose/",
       "license" : "http://dev.perl.org/licenses/",
-      "repository" : "http://github.com/avar/bot-twatterhose"
+      "repository" : {
+         "url" : "http://github.com/avar/bot-twatterhose"
+      }
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }
 

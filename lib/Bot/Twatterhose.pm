@@ -1,6 +1,6 @@
 package Bot::Twatterhose;
 BEGIN {
-  $Bot::Twatterhose::VERSION = '0.03';
+  $Bot::Twatterhose::VERSION = '0.04';
 }
 use 5.010;
 use autodie;
@@ -112,7 +112,7 @@ sub run {
                 exit 0;
             }
         } else {
-            if ($text =~ /^[[:ascii:]]+$/ and $text !~ /\n/) {
+            if ($text =~ /^[[:ascii:]]+$/ and $text !~ /\n/ and $text !~ m[://]) {
                 $hailo->learn($text);
                 say sprintf "Got twat %d/%d: %s", $data->{count}, $self->limit, $text;
             } else {
